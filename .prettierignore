@@ -1,0 +1,21 @@
+# Ignore all files in these directories
+node_modules/
+.next/
+.git/
+dist/
+build/
+out/
+
+# Ignore specific file types
+*.md
+*.json
+*.yml
+*.yaml
+
+# Ignore config files
+next.config.js
+tailwind.config.js
+
+# Ignore generated files
+package-lock.json
+yarn.lock

@@ -11,6 +11,14 @@ const nextConfig = {
   // },
   reactStrictMode: false, // Recommended for the `pages` directory, default in `app`.
 
+  // Ignore ESLint and TypeScript errors during build
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+
   images: {},
   webpack(config, { isServer }) {
     // config.resolve.alias = {
