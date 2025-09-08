@@ -66,7 +66,7 @@ function Clients() {
         }}
         className={styles.first}
       >
-        <SimpleLogo name="pinarea" companyName="Pinarea" />
+        <SimpleLogo name="Pinarea" companyName="Pinarea" />
       </div>
       {isMobile ? <div className={styles.mobileEmptySecond} /> : null}
       {isMobile ? (
