@@ -19,7 +19,12 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
 
-  images: {},
+  images: {
+    unoptimized: true, // This helps with deployment on static hosting
+    domains: ['portfolio-v2-chi-brown.vercel.app', 'houssemdaas.me', 'www.houssemdaas.me'], // Your domains
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
   webpack(config, { isServer }) {
     // config.resolve.alias = {
     //   ...config.resolve.alias,
