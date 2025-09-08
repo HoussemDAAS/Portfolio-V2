@@ -20,10 +20,39 @@ const nextConfig = {
   },
 
   images: {
-    unoptimized: true, // This helps with deployment on static hosting
-    domains: ['portfolio-v2-chi-brown.vercel.app', 'houssemdaas.me', 'www.houssemdaas.me'], // Your domains
+    unoptimized: true, // Disable optimization for better compatibility
+    formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // Allow all domains for flexibility
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+      {
+        protocol: 'http',
+        hostname: '**',
+      }
+    ],
+  },
+  
+  // Add static file serving for images
+  async rewrites() {
+    return [
+      {
+        source: '/project:path*',
+        destination: '/project:path*',
+      },
+      {
+        source: '/automation:path*', 
+        destination: '/automation:path*',
+      },
+      {
+        source: '/daas:path*',
+        destination: '/daas:path*',
+      },
+    ];
   },
   webpack(config, { isServer }) {
     // config.resolve.alias = {

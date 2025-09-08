@@ -3,6 +3,7 @@
 
 import CustomHead from '@src/components/dom/CustomHead';
 import Image from 'next/image';
+import SafeImage from '@src/components/common/SafeImage';
 import Link from 'next/link';
 import clsx from 'clsx';
 import { gsap } from 'gsap';
@@ -107,7 +108,15 @@ function Page() {
                     <h3 className={clsx(styles.text, 'h3')}>{project.title}</h3>
                   </div>
                   <div className={styles.imageContainer}>
-                    <Image priority={index === 0} sizes="100%" src={project.img} fill alt={project.title} />
+                    <SafeImage 
+                      priority={index === 0} 
+                      sizes="100%" 
+                      src={project.img} 
+                      fill 
+                      alt={project.title}
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                    />
                   </div>
                 </div>
               </div>

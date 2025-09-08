@@ -13,18 +13,3 @@
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
-
-// Mobile scroll improvements
-@media (max-width: 812px) {
-  .lenis.lenis-smooth {
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; // Enable momentum scrolling on iOS
-  }
-
-  // Reduce scroll sensitivity on mobile
-  body,
-  html {
-    overscroll-behavior: contain;
-    touch-action: pan-y;
-  }
-}

@@ -23,7 +23,6 @@ import { View } from '@react-three/drei';
 import { gsap } from 'gsap';
 import styles from '@src/pages/app.module.scss';
 import useFoucFix from '@src/hooks/useFoucFix';
-import useMobileScroll from '@src/hooks/useMobileScroll';
 import { useFrame } from '@darkroom.engineering/hamo';
 import { useIsomorphicLayoutEffect } from '@src/hooks/useIsomorphicLayoutEffect';
 import useScroll from '@src/hooks/useScroll';
@@ -53,24 +52,14 @@ function MyApp({ Component, pageProps, router }) {
   const layoutRef = useRef();
 
   useFoucFix();
-  useMobileScroll(); // Add mobile scroll improvements
   useScroll(() => ScrollTrigger.update());
 
   useIsomorphicLayoutEffect(() => {
-    // Detect if user is on mobile
-    const isMobileDevice = window.innerWidth < 812;
-    
     // eslint-disable-next-line no-shadow
     const lenis = new Lenis({
       smoothWheel: true,
-      // Disable smooth touch on mobile to prevent fast scrolling
-      smoothTouch: !isMobileDevice,
-      // Sync touch only on desktop
-      syncTouch: !isMobileDevice,
-      // Reduce touch multiplier for mobile
-      touchMultiplier: isMobileDevice ? 0.5 : 2,
-      // Reduce wheel multiplier for better control
-      wheelMultiplier: isMobileDevice ? 0.5 : 1,
+      smoothTouch: true,
+      syncTouch: true,
       wrapper: mainRef.current || undefined,
       content: mainContainerRef.current || undefined,
     });
