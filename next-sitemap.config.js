@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://houssemdaas.me/',
+  siteUrl: 'https://houssemdaas.netlify.app//',
   generateRobotsTxt: true, // (optional)
   generateIndexSitemap: false,
 };

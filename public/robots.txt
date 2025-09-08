@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://houssemdaas.me/
+Host: https://houssemdaas.netlify.app//
 
 # Sitemaps
-Sitemap: https://houssemdaas.me/sitemap.xml
+Sitemap: https://houssemdaas.netlify.app//sitemap.xml

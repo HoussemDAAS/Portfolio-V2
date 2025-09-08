@@ -2,7 +2,7 @@ import NextHead from 'next/head';
 import { NextSeo } from 'next-seo';
 import PropTypes from 'prop-types';
 
-const SITE_URL = 'https://houssemdaas.me';
+const SITE_URL = 'https://houssemdaas.netlify.app/';
 // OG_IMAGE will be added later when you have your own image
 
 const getSchema = () => ({
