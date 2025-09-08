@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://houssemdaas.me/
+
+# Sitemaps
+Sitemap: https://houssemdaas.me/sitemap.xml

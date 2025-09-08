@@ -1,0 +1,12 @@
+{
+  "name": "Houssem Daas - Full-Stack Developer & AI Automation Specialist",
+  "short_name": "Houssem Daas - Portfolio",
+  "description": "Full-stack developer and AI automation specialist from Tunisia, crafting intelligent web applications and automation solutions. Combining creativity and technical expertise to deliver innovative user-centric solutions.",
+  "icons": [],
+  "theme_color": "#ff6b35",
+  "background_color": "#fefcfa",
+  "start_url": "/",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait"
+}
