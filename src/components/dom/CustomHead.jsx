@@ -13,8 +13,8 @@ const getSchema = () => ({
   url: SITE_URL,
   email: 'mailto:houssemdaas2@gmail.com',
   sameAs: [
-    'https://www.linkedin.com/in/houssem-daas/',
-    'https://github.com/houssemdaas',
+    'https://www.linkedin.com/in/daas-houssem/',
+    'https://github.com/HoussemDAAS',
     'https://twitter.com/houssemdaas',
     'https://www.instagram.com/houssemdaas/'
   ],
