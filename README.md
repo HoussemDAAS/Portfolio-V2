@@ -2,8 +2,6 @@
 
 A modern, interactive portfolio website showcasing my work as a Full-Stack Developer and AI Automation Specialist. Built with cutting-edge web technologies to deliver an immersive user experience.
 
-![Portfolio Preview](public/env.png)
-
 ## 🌟 Live Demo
 
 🔗 **[View Live Portfolio](https://houssemdaas.netlify.app/)**
