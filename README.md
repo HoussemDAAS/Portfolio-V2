@@ -186,16 +186,12 @@ While this is a personal portfolio, suggestions and feedback are welcome!
 3. Make your changes
 4. Submit a pull request
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 📬 Contact
 
 **Houssem DAAS**
 - 🌐 Portfolio: [houssemdaas.netlify.app](https://houssemdaas.netlify.app/)
-- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-- 📧 Email: your.email@example.com
+- 💼 LinkedIn: [Daas Houssem](https://www.linkedin.com/in/daas-houssem/)
+- 📧 Email: houssemdaas2@gmail.com
 - 🐙 GitHub: [@HoussemDAAS](https://github.com/HoussemDAAS)
 
 ---
